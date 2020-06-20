@@ -11,12 +11,10 @@ MongoClient.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MON
     console.log('Error connecting to db.')
     return
   }
-
+  db = client.db(process.env.MONGODB_DBNAME)
   app.listen(process.env.PORT, () => {
     console.log(`Server started on port ${process.env.PORT}`)
   });
-
-  db = client.db(process.env.MONGODB_DBNAME)
   client.close()
 })
 
