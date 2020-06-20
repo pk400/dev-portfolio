@@ -1,0 +1,36 @@
+.emoji-button {
+  display: inline-block;
+  margin-top: -7px;
+  position: relative;
+}
+
+.emoji-circle {
+  display: inline-block;
+  background-color: #FFF;
+  height: 1.8rem;
+  width: 1.8rem;
+  line-height: 1.8rem;
+  border-radius: 100%;
+  user-select: none;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #FEFEFE;
+  box-shadow: 0px 2px 2px #DDD;
+  cursor: pointer;
+}
+
+.counter-circle {
+  position: absolute;
+  width: 0.6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  background: #EF3939;
+  border-radius: 100%;
+  font-size: 0.5rem;
+  color: #FFFFFF;
+  padding: 3px;
+  bottom: -7px;
+  right: -7px;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 2px 2px #DDD;
+}

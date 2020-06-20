@@ -1,0 +1,68 @@
+{
+  "name": "Joel Aro",
+  "headlines": [
+    "Software Developer",
+    "🇨🇦 Toronto, ON"
+  ],
+  "thank_you_note": "Thanks for visiting!",
+  "headline_message": "Passion for building simple, efficient and robust systems.",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/joelaro/",
+    "github": "https://github.com/pk400",
+    "twitter": "https://twitter.com/joelaro"
+  },
+  "projects": [
+    {
+      "name": "Bonfire",
+      "url": "https://github.com/pk400/bonfire-server",
+      "skills": [
+        "Python",
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Pick-A-Spot",
+      "url": "https://github.com/pk400/pick-a-spot",
+      "skills": [
+        "Python",
+        "Django",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Google Maps API"
+      ]
+    },
+    {
+      "name": "Pizza Time",
+      "url": "https://github.com/pk400/pizzatime",
+      "skills": [
+        "React.JS",
+        "Javascript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Portfolio",
+      "url": "",
+      "skills": [
+        "React.JS",
+        "Javascript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Pricing Component",
+      "url": "https://github.com/pk400/pricing-component-with-toggle",
+      "skills": [
+        "React.JS",
+        "Javascript",
+        "HTML",
+        "CSS"
+      ]
+    }
+  ]
+}

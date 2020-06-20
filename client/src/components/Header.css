@@ -1,0 +1,18 @@
+.headline {
+  display: flex;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.headlines:before {
+  content: '\00a0- ';
+  font-weight: normal;
+}
+
+.header-right {
+  vertical-align: top;
+  margin-left: auto;
+}
