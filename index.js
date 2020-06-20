@@ -8,7 +8,7 @@ let db;
 
 MongoClient.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@portfolio-mt89b.mongodb.net/${process.env.MONGODB_DBNAME}?retryWrites=true&w=majority`, (err, client) => {
   if (err) {
-    console.log('Error connecting to db.')
+    console.log('Error connecting to db.', process.env, err)
     return
   }
   db = client.db(process.env.MONGODB_DBNAME)
