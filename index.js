@@ -4,13 +4,20 @@ const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 
 const app = express();
+let db;
 
 MongoClient.connect(`mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@portfolio-mt89b.mongodb.net/${process.env.MONGODB_DBNAME}?retryWrites=true&w=majority`, (err, client) => {
   if (err) {
     console.log('Error connecting to db.')
     return
   }
+
+  app.listen(process.env.PORT, () => {
+    console.log(`Server started on port ${process.env.PORT}`)
+  });
+
   db = client.db(process.env.MONGODB_DBNAME)
+  client.close()
 })
 
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -44,6 +51,3 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server started on port ${process.env.PORT}`)
-});
