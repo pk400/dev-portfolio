@@ -1,48 +1,44 @@
 const express = require('express');
 const path = require('path');
-const MongoClient = require('mongodb').MongoClient;
+const mongoose = require('mongoose');
 require('dotenv').config()
 
 const app = express();
 
-const client = new MongoClient(process.env.MONGODB_URI, {useNewUrlParser: true});
-
-app.listen(process.env.PORT, () => {
-  console.log(`Server started on port ${process.env.PORT}`)
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-app.post('/visitorcounter', (req, res) => {
-  client.connect(err => {
-    const collection = client.db("portfolio").collection("visitorcounter");
-    collection.insertOne({
-      'timestamp': new Date()
-    }, (err, result) => {
-      if (err) {
-        console.log('Error submitting query.')
-      }
-      else {
-        res.send(200)
-      }
-    })
-    client.close();
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  const VisitorSchema = new mongoose.Schema({
+    timestamp: { type: Date, default: Date.now }
   });
-});
+  const Visitor = mongoose.model('Visitor', VisitorSchema);
 
-app.get('/visitorcounter', (req, res) => {
-  client.connect(err => {
-    const collection = client.db("portfolio").collection("visitorcounter");
-    collection.countDocuments((err, result) => {
-      if (err) {
-        console.log('Error with query.')
-        return
-      }
+  app.listen(process.env.PORT, () => {
+    console.log(`Server started on port ${process.env.PORT}`)
+  });
+
+  app.use(express.static(path.join(__dirname, 'client/build')));
+
+  app.post('/visitorcounter', (req, res) => {
+    visitor = new Visitor()
+    visitor.save()
+    return res.sendStatus(200)
+  });
+
+  app.get('/visitorcounter', (req, res) => {
+    Visitor.countDocuments((err, result) => {
       res.send({result})
     })
   });
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+  });
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
+
