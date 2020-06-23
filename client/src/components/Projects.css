@@ -1,3 +1,7 @@
+h3 {
+  margin: 0;
+}
+
 .projects {
   margin-top: 3rem;
 }
@@ -15,7 +19,7 @@
   border: 1px solid #DDD;
   background-color: #FEFEFE;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px #DDD;
 }
 
@@ -58,13 +62,20 @@
 
 .mini-skills {
   text-align: center;
+  font-size: 0.7rem;
+  margin: 10px;
 }
 
 .mini-skill {
   display: inline-block;
-  margin: 5px;
+  margin: 3px;
   background-color: #CCCCCC;
   padding: 5px;
   border-radius: 3px;
   user-select: none;
+}
+
+.project-description {
+  font-weight: normal;
+  margin: 10px;
 }

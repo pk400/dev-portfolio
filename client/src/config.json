@@ -20,7 +20,8 @@
         "HTML",
         "CSS",
         "Javascript"
-      ]
+      ],
+      "description": "Federated social network implementing ActivityPub and WebFinger protocols."
     },
     {
       "name": "Pick-A-Spot",
@@ -32,7 +33,8 @@
         "CSS",
         "Javascript",
         "Google Maps API"
-      ]
+      ],
+      "description": "Restaurant picker web app."
     },
     {
       "name": "Pizza Time",
@@ -42,7 +44,8 @@
         "Javascript",
         "HTML",
         "CSS"
-      ]
+      ],
+      "description": "Make your own pizza with React!"
     },
     {
       "name": "Portfolio",
@@ -52,7 +55,8 @@
         "Javascript",
         "HTML",
         "CSS"
-      ]
+      ],
+      "description": "My developer portfolio."
     },
     {
       "name": "Pricing Component",
@@ -62,7 +66,8 @@
         "Javascript",
         "HTML",
         "CSS"
-      ]
+      ],
+      "description": "Styled pricing component mockup."
     }
   ]
 }

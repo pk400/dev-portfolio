@@ -42,8 +42,8 @@ const Projects = () => {
       <div className="project-filter">
         {showProjects.map((project, i) =>
           <div key={i} className="project-container">
-            <img src={image} />
             <a href={project.url}><h3 className="project-name">{project.name}</h3></a>
+            <div className="project-description">{project.description}</div>
             <div className="mini-skills">
               {project.skills.map((skill, i) =>
                 <div key={i} className="mini-skill">{skill}</div>
