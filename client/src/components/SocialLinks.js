@@ -9,13 +9,13 @@ import './SocialLinks.css'
 const SocialLinks = () => {
   const social = []
   if ("linkedin" in ProfileConfig.social) {
-    social.push(<a href={ProfileConfig.social.linkedin}><img src={linkedinSVG} /></a>)
+    social.push(<a href={ProfileConfig.social.linkedin} target='_blank'><img src={linkedinSVG} /></a>)
   }
   if ("github" in ProfileConfig.social) {
-    social.push(<a href={ProfileConfig.social["github"]}><img src={githubSVG} /></a>)
+    social.push(<a href={ProfileConfig.social.github} target='_blank'><img src={githubSVG} /></a>)
   }
   if ("twitter" in ProfileConfig.social) {
-    social.push(<a href={ProfileConfig.social["twitter"]}><img src={twitterSVG} /></a>)
+    social.push(<a href={ProfileConfig.social.twitter} target='_blank'><img src={twitterSVG} /></a>)
   }
   return (
     <div>
