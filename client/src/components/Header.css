@@ -1,18 +1,37 @@
 .headline {
   display: flex;
+  vertical-align: bottom;
 }
 
 h1 {
   font-weight: bold;
   margin: 0;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.headlines:before {
+.headlines {
+  font-weight: 500;
+}
+
+.headlines:after {
   content: '\00a0- ';
   font-weight: normal;
 }
 
+.headlines:last-child:after {
+  content: '';
+}
+
+.header-left {
+  font-size: 1.5rem;
+}
+
 .header-right {
-  vertical-align: top;
+  vertical-align: bottom;
   margin-left: auto;
+}
+
+.headline-message {
+  margin-top: 0.2rem;
 }

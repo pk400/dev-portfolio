@@ -5,69 +5,87 @@
     "🇨🇦 Toronto, ON"
   ],
   "thank_you_note": "Thanks for visiting!",
-  "headline_message": "Passion for building simple, efficient and robust systems.",
+  "headline_message": "Building simple, efficient and robust systems.",
   "social": {
     "linkedin": "https://www.linkedin.com/in/joelaro/",
     "github": "https://github.com/pk400",
     "twitter": "https://twitter.com/joelaro"
   },
+  "work": [
+    {
+      "company": "Spire Trading Inc.",
+      "title": "Software Developer",
+      "start": 2018,
+      "end": 2020
+    },
+    {
+      "company": "Mozilla Corporation",
+      "title": "Desktop Systems Specialist",
+      "start": 2018,
+      "end": 2018
+    }
+  ],
   "projects": [
     {
       "name": "Bonfire",
-      "url": "https://github.com/pk400/bonfire-server",
-      "skills": [
-        "Python",
-        "HTML",
-        "CSS",
-        "Javascript"
-      ],
-      "description": "Federated social network implementing ActivityPub and WebFinger protocols."
+      "skills": ["Python", "HTML", "CSS", "Javascript"],
+      "description": "Federated social network implementing ActivityPub and WebFinger protocols.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/bonfire-server"]
+      ]
+    },
+    {
+      "name": "TempDrop",
+      "skills": ["Python", "Django", "AWS", "ORM", "Javascript", "React.JS", "HTML", "CSS"],
+      "description": "A safe place to temporarily drop your file and share with others.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/tempdrop.space"],
+        ["Live Demo", "https://tempdrop.space"]
+      ]
+    },
+    {
+      "name": "CurrEx",
+      "skills": ["React.JS", "Tailwind CSS", "React.JS", "Javascript", "HTML", "CSS"],
+      "description": "Foreign currency exchange site using the exchangeratesapi.io API.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/hack-exchange"],
+        ["Live Demo", "https://blissful-hugle-d563f5.netlify.app/"]
+      ]
     },
     {
       "name": "Pick-A-Spot",
-      "url": "https://github.com/pk400/pick-a-spot",
-      "skills": [
-        "Python",
-        "Django",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Google Maps API"
-      ],
-      "description": "Restaurant picker web app."
+      "skills": ["Python", "Django", "HTML", "CSS", "Javascript", "Google Maps API"],
+      "description": "Restaurant picker web app.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/pick-a-spot"]
+      ]
     },
     {
       "name": "Pizza Time",
-      "url": "https://github.com/pk400/pizzatime",
-      "skills": [
-        "React.JS",
-        "Javascript",
-        "HTML",
-        "CSS"
-      ],
-      "description": "Make your own pizza with React!"
+      "skills": ["React.JS", "Javascript", "HTML", "CSS"],
+      "description": "Make your own pizza with React!",
+      "links": [
+        ["Source Code", "https://github.com/pk400/pizzatime"],
+        ["Live Demo", "https://suspicious-spence-626f9d.netlify.app/"]
+      ]
     },
     {
       "name": "Portfolio",
-      "url": "",
-      "skills": [
-        "React.JS",
-        "Javascript",
-        "HTML",
-        "CSS"
-      ],
-      "description": "My developer portfolio."
+      "skills": ["React.JS", "Javascript", "HTML", "CSS"],
+      "description": "My developer portfolio.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/dev-portfolio"],
+        ["Live Demo", "https://joelaro.com"]
+      ]
     },
     {
       "name": "Pricing Component",
-      "url": "https://github.com/pk400/pricing-component-with-toggle",
-      "skills": [
-        "React.JS",
-        "Javascript",
-        "HTML",
-        "CSS"
-      ],
-      "description": "Styled pricing component mockup."
+      "skills": ["React.JS", "Javascript", "HTML", "CSS"],
+      "description": "Styled pricing component mockup.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/pricing-component-with-toggle"],
+        ["Live Demo", "https://xenodochial-shirley-2755e8.netlify.app/"]
+      ]
     }
   ]
 }

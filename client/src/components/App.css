@@ -1,19 +1,9 @@
-@font-face {
-  font-family: "Fira Code";
-  src: url("../fonts/FiraCode/FiraCode-SemiBold.woff2")
-}
-
-@font-face {
-  font-family: "Fira Code";
-  src: url("../fonts/FiraCode/FiraCode-Bold.woff2");
-  font-weight: bold;
-}
 
 body {
-  font-family: "Fira Code";
+  font-family: 'Fira Code', monospace;
   font-size: 100%;
-  margin: 4rem;
-  background-color: #F0F0F0;
+  margin: 5rem;
+  background-image: url(../background.png);
   color: #2a2a2a;
 }
 

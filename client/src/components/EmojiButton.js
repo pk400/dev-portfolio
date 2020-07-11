@@ -9,7 +9,7 @@ const EmojiButton = ({
   emoji,
   hideCounter=false
 }) => {
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(222)
   const incrementCounter = () => {
     axios
       .post('/visitorcounter')
@@ -36,7 +36,7 @@ const EmojiButton = ({
     <div className="emoji-button">
       {text}
       <div className="emoji-circle" onClick={incrementCounter}>
-        {emoji}
+        <span className="emoji-text">{emoji}</span>
         {showCounter}
       </div>
     </div>

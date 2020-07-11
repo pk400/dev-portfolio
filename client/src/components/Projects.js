@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import image from '../images/prj-image.png'
 import ProfileConfig from '../config.json'
 import './Projects.css'
 
@@ -13,7 +12,7 @@ const initializeSkills = projects => {
 const Projects = () => {
   const allSkills = initializeSkills(ProfileConfig.projects)
   const [showProjects, setShowProjects] = useState(ProfileConfig.projects)
-  const [skillFilter, setSkillFilter] = useState(allSkills)
+  const [skillFilter, setSkillFilter] = useState(new Set())
   const updateFilter = (skill) => {
     const newFilter = new Set([...skillFilter])
     if (!newFilter.has(skill)) {
@@ -23,6 +22,10 @@ const Projects = () => {
     else {
       newFilter.delete(skill)
       setSkillFilter(newFilter)
+    }
+    if (newFilter.size === 0) {
+      setShowProjects(ProfileConfig.projects)
+      return
     }
     const projects = ProfileConfig.projects.filter(project =>
       project.skills.some(skill => newFilter.has(skill)))
@@ -42,8 +45,13 @@ const Projects = () => {
       <div className="project-filter">
         {showProjects.map((project, i) =>
           <div key={i} className="project-container">
-            <a href={project.url}><h3 className="project-name">{project.name}</h3></a>
+            <h3 className="project-name">{project.name}</h3>
             <div className="project-description">{project.description}</div>
+            <div className="project-links">
+              <ul>
+                {project.links.map(link => <li><a href={link[1]}>{link[0]}</a></li>)}
+              </ul>
+            </div>
             <div className="mini-skills">
               {project.skills.map((skill, i) =>
                 <div key={i} className="mini-skill">{skill}</div>
