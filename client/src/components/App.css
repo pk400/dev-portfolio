@@ -3,6 +3,7 @@ body {
   font-family: 'Fira Code', monospace;
   font-size: 100%;
   margin: 5rem;
+  background-color: #FEFEFE;
   background-image: url(../background.png);
   color: #2a2a2a;
 }

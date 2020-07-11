@@ -14,7 +14,7 @@ const Header = () =>
           <span key={i} className="headlines">{headline}</span>)}
       </div>
       <div className="header-right">
-      {ProfileConfig.thank_you_note} <EmojiButton emoji="👋" />
+        <span className="thank-you">{ProfileConfig.thank_you_note}</span><EmojiButton emoji="👋" />
       </div>
     </div>
     <div className="headline-message">{ProfileConfig.headline_message}</div>

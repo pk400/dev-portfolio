@@ -1,5 +1,6 @@
 .headline {
   display: flex;
+  flex-wrap: wrap;
   vertical-align: bottom;
 }
 
@@ -34,4 +35,17 @@ h1 {
 
 .headline-message {
   margin-top: 0.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-right {
+    /* visibility: hidden; */
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .header-right .thank-you {
+    display: none;
+  }
 }

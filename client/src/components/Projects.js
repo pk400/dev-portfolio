@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="project-description">{project.description}</div>
             <div className="project-links">
               <ul>
-                {project.links.map(link => <li><a href={link[1]}>{link[0]}</a></li>)}
+                {project.links.map(link => <li><a href={link[1]} target='_blank'>{link[0]}</a></li>)}
               </ul>
             </div>
             <div className="mini-skills">
