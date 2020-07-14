@@ -2,9 +2,10 @@
   "name": "dev-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "cd server && node index.js",
+    "heroku-prebuild": "cd server && npm install",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Joel Aro",
