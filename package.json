@@ -4,7 +4,8 @@
   "description": "Entrypoint for web app.",
   "main": "server/index.js",
   "scripts": {
-    "start": "npm run build --prefix client && cd server && npm install && node index.js"
+    "start": "cd server && npm install && node index.js",
+    "heroku-prebuild": "cd client && npm install && npm run build && cd .."
   },
   "author": "Joel Aro",
   "license": "ISC"
