@@ -71,7 +71,7 @@
     },
     {
       "name": "Portfolio",
-      "skills": ["React.JS", "Javascript", "HTML", "CSS"],
+      "skills": ["React.JS", "Javascript", "HTML", "CSS", "Node.JS", "Express.JS"],
       "description": "My developer portfolio.",
       "links": [
         ["Source Code", "https://github.com/pk400/dev-portfolio"],
@@ -85,6 +85,15 @@
       "links": [
         ["Source Code", "https://github.com/pk400/pricing-component-with-toggle"],
         ["Live Demo", "https://xenodochial-shirley-2755e8.netlify.app/"]
+      ]
+    },
+    {
+      "name": "BlueBird",
+      "skills": ["HTML", "CSS", "Bulma CSS"],
+      "description": "Mock product landing page.",
+      "links": [
+        ["Source Code", "https://github.com/pk400/blue-bird"],
+        ["Live Demo", "https://eager-wozniak-cb2c8a.netlify.app/"]
       ]
     }
   ]
