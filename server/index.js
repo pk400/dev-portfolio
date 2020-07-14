@@ -22,7 +22,7 @@ db.once('open', function() {
     console.log(`Server started on port ${process.env.PORT}`)
   });
 
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, '../client/build')));
 
   app.post('/visitorcounter', (req, res) => {
     visitor = new Visitor()

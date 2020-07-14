@@ -1,12 +1,10 @@
 {
   "name": "dev-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Entrypoint for web app.",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "heroku-prebuild": "cd server && npm install",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "npm run build --prefix client && cd server && npm install && node index.js"
   },
   "author": "Joel Aro",
   "license": "ISC"
